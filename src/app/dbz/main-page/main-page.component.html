@@ -1,0 +1,18 @@
+<p>Dragon Ball Z</p>
+<hr>
+
+<div class="row">
+
+    <div class="col">
+        <app-personajes></app-personajes>
+        <!-- Utilizando @Input
+            <app-personajes [personajes]="personajes"></app-personajes> -->
+    </div>
+
+    <div class="col">
+        <app-agregar [nuevo]="nuevo"></app-agregar>
+        <!-- Utilizando @Input y @Output() - Emitter
+            <app-agregar [nuevo]="nuevo" (onNuevoPersonaje)="agregarNuevoPersonaje($event);"></app-agregar>
+        -->
+    </div>
+</div>
